@@ -1,0 +1,77 @@
+/* callback section */
+
+.request {
+  background-color: #f4f4f4;
+    width: 1360px;
+}
+
+.request__container {
+  display: flex;
+    width: 1360px;
+}
+
+.request__image {
+  display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.request__title {
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: calc(48 / 38);
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.request__button {
+  display: block;
+  background-color: #28a745;
+  color: #ffffff;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  width: 620px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+.request-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 78px;
+  padding-bottom: 82px;
+}
+
+.field-input {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: #808080;
+  width: 620px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border: none;
+}
+
+.field-input--first {
+  margin-bottom: 36px;
+}
+
+.field-input--second {
+  margin-bottom: 60px;
+}
+
