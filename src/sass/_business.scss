@@ -3,43 +3,45 @@
     padding-top: 48px;
     padding-bottom: 48px;
     text-align: center;
+
+    &__title {
+      margin-bottom: 17px;
+    
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.65;
+    }
+    &__subtitle {
+      display: inline-block;
+      margin-bottom: 34px;
+    
+      font-weight: 300;
+      font-size: 38px;
+      line-height: 1.26;
+    }
+    &__text {
+      margin-bottom: 39px;
+    
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+    
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -8px;
+      margin-bottom: -8px;
+    }
+    &__item {
+      width: calc(100% / 4 - 8px);
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    
+    &__img {
+      display: block;
+    }
   }
   
-  .cases-title {
-    margin-bottom: 17px;
   
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.65;
-  }
-  .cases-subtitle {
-    display: inline-block;
-    margin-bottom: 34px;
-  
-    font-weight: 300;
-    font-size: 38px;
-    line-height: 1.26;
-  }
-  .cases-text {
-    margin-bottom: 39px;
-  
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.55;
-  }
-  
-  .cases-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -8px;
-    margin-bottom: -8px;
-  }
-  .cases-item {
-    width: calc(100% / 4 - 8px);
-    margin-right: 8px;
-    margin-bottom: 8px;
-  }
-  
-  .cases-img {
-    display: block;
-  }
