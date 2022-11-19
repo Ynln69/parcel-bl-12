@@ -1,16 +1,7 @@
 .hero {
-  width: 1360px;
-  height: 768px;
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 210px;
   padding-bottom: 280px;
   
-  background-color: var(--secondary-green-color);
-  background-image: var(--gradient-hero), url(../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   text-align: center;
 }
 

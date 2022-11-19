@@ -38,6 +38,10 @@
   width: 620px;
   padding-top: 7px;
   padding-bottom: 10px;
+
+  &:hover, &:focus {
+    background-color: var( --btn-hero-color);
+  }
 }
 
 .request-form-container {
@@ -61,6 +65,10 @@
   padding-bottom: 5px;
   padding-left: 5px;
   border: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .field-input--first {
