@@ -1,0 +1,57 @@
+.background {
+    max-width: 1360px;
+    height: 768px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: var(--secondary-green-color);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-right: 46px;
+    margin-left: 52px;
+}
+
+.logo-first {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-green-color);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1.2;
+}
+
+.logo-second {
+    color: var(--main-wight-color);
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1.2;
+}
+
+.header-icon {
+    margin-right: 10px;
+}
+
+.nav-list {
+    display: flex;
+    margin-left: auto;
+    gap: 38px;
+}
+
+.nav-link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    color: var(--main-wight-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+}
