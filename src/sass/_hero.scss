@@ -1,3 +1,17 @@
+.background {
+  max-width: 1360px;
+  height: 768px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: var(--secondary-green-color);
+  background-image: var(--gradient-hero),
+      url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .hero {
   padding-top: 210px;
   padding-bottom: 280px;
@@ -47,6 +61,10 @@
   line-height: calc(28 / 18);
 
     &:hover, &:focus {
-      background-color: var( --btn-hero-color);
+      background-color: var(--main-wight-color);
+      fill: var(--secondary-green-color);
+      color: var(--secondary-green-color);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
     }
 }

@@ -1,13 +1,13 @@
-.command-section {
+.command__section {
     width: 1360px;
     margin-right: auto;
     margin-left: auto;
   } 
 
-.command-container {
+.command__container {
     display: flex;
 }
-  .command-content {
+  .command__content {
     width: 680px;
     height: 460px;
     padding-top: 84px;
@@ -18,7 +18,7 @@
     background-color: var(--secondary-green-color);
   }
 
-  .command-text-first {
+  .command__text-first {
     margin-bottom: 5px;
   
     color: var(--main-wight-color);
@@ -27,7 +27,7 @@
     line-height: calc(33 / 20);
   }
   
-  .command-title {
+  .command__title {
     margin-bottom: 26px;
   
     color: var(--main-wight-color);
@@ -36,7 +36,7 @@
     line-height: calc(48 / 38);
   }
   
-  .command-text-second {
+  .command__text-second {
     margin-bottom: 17px;
   
     color: var(--main-wight-color);
@@ -45,7 +45,7 @@
     line-height: calc(28 / 18);
   }
   
-  .command-button {
+  .command__button {
     border: 1px solid var(--main-wight-color);
     border-radius: 5px;
     padding: 12px 27px 12px 42px;
