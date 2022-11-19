@@ -1,50 +1,61 @@
 .hero {
-    background-image: url(../images/hero-rectangle.jpg);
-    width: 1360px;
-    height: 768px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 210px;
-    padding-bottom: 280px;
-    text-align: center;
-  }
+  width: 1360px;
+  height: 768px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 210px;
+  padding-bottom: 280px;
   
-  .hero-title {
-    margin-bottom: 25px;
+  background-color: var(--secondary-green-color);
+  background-image: var(--gradient-hero), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
 
-    color: var(--hero-text-color);
-    font-weight: 300;
-    font-size: 55px;
-    line-height: calc(66 / 55);
-  }
-  
-  .hero-text {
-    margin-bottom: 29px;
+.hero-title {
+  margin-bottom: 25px;
 
-    font-weight: 400;
-    font-size: 22px;
-    line-height: calc(37 / 22);
-    color: var(--hero-text-color);
-   
-  }
+  color: var(--hero-text-color);
+  font-weight: 300;
+  font-size: 55px;
+  line-height: calc(66 / 55);
+}
+
+.hero-text {
+  margin-bottom: 29px;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: calc(37 / 22);
+  color: var(--hero-text-color);
+
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto;
   
-  .hero-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 10px;
-      padding-right: 30px;
-      padding-bottom: 10px;
-      padding-left: 30px;
-      border-radius: 5px;
-      margin: 0 auto;
-      gap: 5px;
-    
-      color: var(--main-wight-color);
-      fill: var(--main-wight-color);
-      background: var(--secondary-green-color);
-      border: var(--secondary-green-color);
-      font-weight: 400;
-      font-size: 18px;
-      line-height: calc(28 / 18);
+
+  color: var(--main-wight-color);
+  fill: var(--main-wight-color);
+  background: var(--secondary-green-color);
+  border: var(--secondary-green-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+
+    &:hover, &:focus {
+      background-color: var( --btn-hero-color);
     }
+}
