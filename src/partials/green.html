@@ -1,12 +1,46 @@
-<section id="about" class="command__section">
-  <div class="command__container">
-    <img
-      class="command__img"
-      src="./images/command.jpg"
-      alt="Our command"
-      width="680"
-    />
-    <div class="command__content">
+<section class="command">
+  <div class="container command-container">
+    <picture>
+      <source
+        srcset="./images/command.webp 1x, ./images/command@2x.webp 2x"
+        media="(min-width: 1360px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/command.jpg 1x, ./images/command@2x.jpg 2x"
+        media="(min-width: 1360px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="./images/command768.webp 1x, ./images/command768@2x.webp 2x"
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/command768.jpg 1x, ./images/command768@2x.jpg 2x"
+        media="(min-width: 768px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="./images/command320.webp 1x, ./images/command320@2x.webp 2x"
+        media="(min-width:320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/command320.jpg 1x, ./images/command320@2x.jpg 2x"
+        media="(min-width: 320px)"
+        type="image/jpeg"
+      />
+
+      <img
+        class="command__img"
+        src="./images/command.jpg"
+        alt="Our command"
+        width="680"
+      />
+    </picture>
+
+    <div class="command__description">
       <p class="command__text-first">What you are looking for</p>
       <h2 class="command__title">We provide bespoke solutions</h2>
       <p class="command__text-second">
