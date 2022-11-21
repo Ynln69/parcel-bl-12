@@ -6,8 +6,18 @@
 }
 
 .request__container {
-  display: flex;
+  
     width: 1360px;
+
+    @media screen and (min-width:320px) {
+      width:100vw;
+
+    }
+
+    @media screen and (min-width:768px) {
+      width:100%;
+      display: flex;
+    }
 }
 
 .request__image {
@@ -35,7 +45,8 @@
   border-radius: 5px;
   border-style: none;
   cursor: pointer;
-  width: 620px;
+  
+  width: 100%;
   padding-top: 7px;
   padding-bottom: 10px;
 
@@ -48,20 +59,30 @@
 .request-form-container {
   display: flex;
   flex-direction: column;
-  width: 680px;
+  
+  width: 100%;
+  max-width: 680px;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 78px;
   padding-bottom: 82px;
+
+  @media screen and (max-width:480px) {
+    width:100%;
+  }
 }
+
+
 
 .field-input {
   display: block;
+  
   font-weight: 400;
-  font-size: 18px;
-  line-height: calc(28 / 18);
+    font-size: 16px;
+    line-height: calc(23/16);
   color: #808080;
-  width: 620px;
+  
+  width: 100%;
   padding-top: 6px;
   padding-bottom: 5px;
   padding-left: 5px;
@@ -70,6 +91,13 @@
   &:focus {
     outline: none;
   }
+  @media screen and (min-width: 768px) {
+font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  }
+
+
 }
 
 .field-input--first {
