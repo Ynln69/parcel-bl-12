@@ -16,7 +16,7 @@
   width: 320px;
   margin: 0 auto;
   background-color: var(--secondary-green-color);
-  color: var(--main-white-color);
+  color: var(--main-wight-color);
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -93,10 +93,10 @@
   display: block;
   font-size: 16px;
   font-style: inherit;
-  color: var(--main-white-color);
+  color: var(--main-wight-color);
   background-color: var(--secondary-green-color);
   padding: 10px 31px 11px 41px;
-  border: 1px solid var(--main-white-color);
+  border: 1px solid var(--main-wight-color);
   line-height: 1.17;
   border-radius: 5px;
   cursor: pointer;
@@ -112,4 +112,10 @@
   @media screen and (min-width: 1360px) {
     padding: 11px 27px 12px 42px;
   }
+  &:hover {
+    color: var(--secondary-green-color);
+    background-color: var(--main-wight-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 }
