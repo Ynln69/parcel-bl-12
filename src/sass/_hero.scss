@@ -10,6 +10,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: 533px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 768px;
+height: 1024px;
+      }
 }
 
 .hero {
@@ -17,6 +26,14 @@
   padding-bottom: 280px;
   
   text-align: center;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 44px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-top: 357px;
+      }
 }
 
 .hero-title {
@@ -26,6 +43,21 @@
   font-weight: 300;
   font-size: 55px;
   line-height: calc(66 / 55);
+
+  @media screen and (min-width: 320px) and (max-width: 767px){
+  width: 300px;
+  font-size: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+  
+
+  @media screen and (min-width: 320px) and (max-width: 767px){
+   
+    font-size: 55px;
+
+    }
 }
 
 .hero-text {
@@ -35,6 +67,12 @@
   font-size: 22px;
   line-height: calc(37 / 22);
   color: var(--hero-text-color);
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
 }
 
