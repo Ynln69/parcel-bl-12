@@ -2,9 +2,7 @@
   <div class="blog-section__container">
     <div class="blog-section__content">
       <h2 class="blog-section__title">
-        <time class="blog-section__date" datetime="2020-04-16"
-          >April 16 2020</time
-        >
+        <time class="blog-section__date" datetime="2020-04-16">April 16 2020</time>
       </h2>
       <span class="blog-section__subtitle">Blog post one</span>
       <p class="blog-section__text">
@@ -15,10 +13,26 @@
       </p>
       <button class="blog-section__button" type="button">Read our blog</button>
     </div>
-    <img
-      src="./images/cup-of-coffee.jpg"
-      alt="
-    a notebook, a cup of coffee and a tablet"
-    />
+    <picture>
+
+      <source srcset="./images/blog680.webp 1x, ./images/blog680@2x.webp 2x" media="(min-width: 1360px)"
+        type="image/webp" />
+      <source srcset="./images/blog680.jpg 1x, ./images/blog680@2x.jpg 2x" media="(min-width: 1360px)"
+        type="image/jpeg" />
+
+      <source srcset="./images/blog384.webp 1x, ./images/blog384@2x.webp 2x" media="(min-width: 768px)"
+        type="image/webp" />
+      <source srcset="./images/blog384.jpg 1x, ./images/blog384@2x.jpg 2x" media="(min-width: 768px)"
+        type="image/jpeg" />
+
+      <source srcset="./images/blog320.webp 1x, ./images/blog320@2x.webp 2x" media="(min-width:320px)"
+        type="image/webp" />
+      <source srcset="./images/blog320.jpg 1x, ./images/blog320@2x.jpg 2x" media="(min-width: 320px)"
+        type="image/jpeg" />
+
+      <img class="blog-section__img" src="./images/blog680.jpg" alt="a notebook, a cup of coffee and a tablet"
+        width="768px" />
+
+    </picture>
   </div>
 </section>
