@@ -1,13 +1,21 @@
+.header {
+    padding-top: 20px;
+}
 .navigation {
     display: flex;
-    align-items: center;
-    margin-right: 46px;
-    margin-left: 52px;
+    flex-direction: column;
+    @media screen and (min-width:768px){
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 65px;
+    }
 }
 
 .logo-first {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: var(--secondary-green-color);
     font-weight: 400;
     font-size: 35px;
@@ -27,8 +35,11 @@
 
 .nav-list {
     display: flex;
-    margin-left: auto;
-    gap: 38px;
+    justify-content: center;
+    gap: 12px;
+    @media screen and (min-width:768px) {
+        gap: 38px;
+    }
 }
 
 .nav-link {
@@ -38,8 +49,12 @@
 
     color: var(--main-wight-color);
     font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
+    font-size: 16px;
+    line-height: calc(26/16);
+    @media screen and (min-width:768px) {
+        font-size: 18px;
+        line-height: 1.55;
+    }
 
         &:hover, &:focus {
             text-decoration: underline;

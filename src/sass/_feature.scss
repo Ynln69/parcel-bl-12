@@ -1,13 +1,29 @@
 .icon {
-    padding-top: 40px;
-    padding-bottom: 19px;
+  padding-top: 30px;
+  padding-bottom: 31px;
+    @media screen and (min-width:768px){
+      padding-top: 40px;
+      padding-bottom: 19px;
+    }
   }
   
   .icon-list {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 71px;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+     @media screen and (min-width:768px){
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 51px;
+    }
+    @media screen and (min-width:1380px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 71px;
+    }
   }
   
   .icon-item {
@@ -43,8 +59,18 @@
   }
   
   .icon-text {
-    width: 362px;
+    width: 220px;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
+    font-size: 16px;
+    line-height: calc(26/16);
+    @media screen and (min-width: 768px) {
+      width: 185px;
+      font-size: 18px;
+      line-height: calc(28/18);
+    }
+    @media screen and (min-width: 1380px){
+      width: 362px;
+      font-size: 18px;
+      line-height: 1.55;
+    }
   }

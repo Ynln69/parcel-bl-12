@@ -1,29 +1,38 @@
 .request {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   background-color: #f4f4f4;
-  width: 1360px;
+  @media screen and (min-width:320px){
+    width: 320px;
+  }
+  @media screen and (min-width:768px){
+    width: 768px;
+  }
+  @media screen and (min-width:1360px){
+    width: 1380px;
+  }
 }
 
 .request__container {
-  
-    width: 1360px;
-
-    @media screen and (min-width:320px) {
-      width:100vw;
-
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width:320px){
+      width: 320px;
     }
-
-    @media screen and (min-width:768px) {
-      width:100%;
-      display: flex;
+    @media screen and (min-width:768px){
+      width: 768px;
+      flex-direction: row;
+    }
+    @media screen and (min-width:768px){
+      width: 1360px;
     }
 }
 
 .request__image {
   display: block;
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .request__title {
@@ -45,43 +54,42 @@
   border-radius: 5px;
   border-style: none;
   cursor: pointer;
-  
+
   width: 100%;
   padding-top: 7px;
   padding-bottom: 10px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+      0px 2px 1px rgba(0, 0, 0, 0.2);
   }
 }
 
 .request-form-container {
   display: flex;
   flex-direction: column;
-  
   width: 100%;
-  max-width: 680px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 78px;
-  padding-bottom: 82px;
+  padding: 30px;
 
-  @media screen and (max-width:480px) {
-    width:100%;
+  @media screen and (min-width: 768px) {
+    width: 384px;
+  }
+  @media screen and (min-width: 1360px) {
+    width: 680px;
+    padding-top: 78px;
+    padding-bottom: 82px;
   }
 }
 
-
-
 .field-input {
   display: block;
-  
+
   font-weight: 400;
-    font-size: 16px;
-    line-height: calc(23/16);
+  font-size: 16px;
+  line-height: calc(23 / 16);
   color: #808080;
-  
+
   width: 100%;
   padding-top: 6px;
   padding-bottom: 5px;
@@ -92,12 +100,10 @@
     outline: none;
   }
   @media screen and (min-width: 768px) {
-font-weight: 400;
-  font-size: 18px;
-  line-height: calc(28 / 18);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28 / 18);
   }
-
-
 }
 
 .field-input--first {
@@ -107,4 +113,3 @@ font-weight: 400;
 .field-input--second {
   margin-bottom: 60px;
 }
-
