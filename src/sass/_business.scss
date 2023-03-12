@@ -1,59 +1,48 @@
 .cases {
-    width: 100%;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    text-align: center;
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  text-align: center;
 
-    &__title {
-      margin-bottom: 17px;
-    
-      font-weight: 400;
-      font-size: 18px;
-      line-height: calc(30/18);
+  &__title {
+    margin-bottom: 17px;
 
-      @media screen and (min-width:768px) {
-        font-size: 20px;
-        line-height: calc(33/20);
-      }
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(30 / 18);
 
-    }
-    &__subtitle {
-      display: inline-block;
-      margin-bottom: 34px;
-    
-      font-weight: 300;
-      font-size: 38px;
-      line-height: 1.26;
-    }
-    &__text {
-      margin-bottom: 39px;
-    
-      font-weight: 300;
-      font-size: 16px;
-      line-height: calc(26/16);
-
-      @media screen and (min-width:768px) {
-        font-size: 18px;
-      line-height: calc(28/18);
-      }
-    }
-    
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      margin-right: -8px;
-      margin-bottom: -8px;
-      @media screen and (max-width:767px) {
-        flex-direction: column;
-        gap: 7px;
-        align-items: center;
-      }
-    }
-    &__item {
-      width: calc(100% / 4 - 8px);
-      margin-right: 8px;
-      margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+      line-height: calc(33 / 20);
     }
   }
-  
-  
+  &__subtitle {
+    display: inline-block;
+    margin-bottom: 34px;
+
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+  &__text {
+    margin-bottom: 39px;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: calc(28 / 18);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
