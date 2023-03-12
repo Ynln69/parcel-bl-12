@@ -68,6 +68,7 @@
     font-weight: 300;
     font-size: 38px;
     line-height: 1.26;
+    text-transform: capitalize;
   }
 
   &__text {
@@ -78,6 +79,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.62;
+
     @media screen and (min-width: 320px) {
       width: 260px;
     }
@@ -85,6 +87,9 @@
       width: 315px;
       font-size: 18px;
       line-height: 1.56;
+    }
+    @media screen and (min-width: 768px) {
+      width: 606px;
     }
   }
 
@@ -112,18 +117,5 @@
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
-
-    // &__img {
-    //   display: block;
-    //   width: 320px;
-
-    //   @media screen and (min-width: 768px) {
-    //     width: 384px;
-    //   }
-
-    //   @media screen and (min-width: 1360px) {
-    //     width: 680px;
-    //   }
-    // }
   }
 }
