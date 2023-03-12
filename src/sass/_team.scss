@@ -27,11 +27,16 @@
 }
 
 .team__title {
+  display: inline-block;
   margin-bottom: 34px;
+  width: 220px;
 
   font-size: 38px;
   font-weight: 300;
   line-height: 1.26;
+  @media screen and (min-width: 768px) {
+    width: 410px;
+  }
 }
 
 .team__text {
@@ -46,16 +51,15 @@
 }
 
 .team__list {
-  @media screen and (min-width: 768px) {
-    justify-content: center;
-    display: flex;
-    gap: 20px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 
-  @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
+  @media screen and (min-width: 768px) {
     align-items: center;
+    flex-direction: row;
   }
 }
 

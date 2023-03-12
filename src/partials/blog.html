@@ -15,30 +15,19 @@
       </p>
       <button class="blog-section__button" type="button">Read our blog</button>
     </div>
-    <picture>
-      <source
-        srcset="
-          ./images/mobile/cup-of-coffee.jpg    1x,
-          ./images/mobile/cup-of-coffee@2x.jpg 2x
-        "
-        media="(max-width: 767px)"
-      />
-      <source
-        srcset="
-          ./images/tablet/cup-of-coffee.jpg    1x,
-          ./images/tablet/cup-of-coffee@2x.jpg 2x
-        "
-        media="(max-width: 1359px)"
-      />
-      <source
-        srcset="./images/cup-of-coffee.jpg 1x, ./images/cup-of-coffee@2x.jpg 2x"
-        media="(min-width: 1360px)"
-      />
-      <img
-        class="blog-section__img"
-        src="./images/cup-of-coffee.jpg"
-        alt="a notebook, a cup of coffee and a tablet"
-      />
-    </picture>
+    <img
+      srcset="
+        ./images/mobile/cup-of-coffee.jpg     320w,
+        ./images/mobile/cup-of-coffee@2x.jpg  640w,
+        ./images/tablet/cup-of-coffee.jpg     384w,
+        ./images/tablet/cup-of-coffee@2x.jpg  768w,
+        ./images/cup-of-coffee.jpg            680w,
+        ./images/cup-of-coffee@2x.jpg        1360w
+      "
+      sizes="(min-width: 1360px) 680px, (min-width: 768px) 384px, (min-width: 320px) 320px, 100vw"
+      class="blog-section__img"
+      src="./images/cup-of-coffee.jpg"
+      alt="a notebook, a cup of coffee and a tablet"
+    />
   </div>
 </section>
